@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+
+</head>
+
+<body class="frame-page">
+    <div class="container">
+        <!-- Background -->
+        <div class="frame-bg"></div>
+
+        <!-- Navigation Section -->
+        <nav class="frame-nav">
+            <a href="index.html">HOME</a> <!-- Only show HOME -->
+            <a href="2_aboutme.html" target="content-frame">ABOUT ME</a>
+            <a href="3_place.html" target="content-frame">FAVORITE PLACE</a>
+            <a href="4_things.html" target="content-frame">FAVORITE THINGS</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="frame-main">
+            <iframe src="2_aboutme.html" name="content-frame" class="content-frame"></iframe>
+        </main> 
+    </div>
+
+    <!-- Contact me section -->
+    <footer class="contact-me">
+        <p>Contact me:</p>
+        <div class="contact-container">
+            <a href="https://www.instagram.com/michi_xmin/profilecard/?igsh=MTU4cTR4c2VyMTYwZA==" target="_blank">
+                <img src="Pictures/contact_b&w_instagram.png">
+            </a>
+        </div>
+        <div class="contact-container">
+            <a href="https://www.facebook.com/michelle.gunawan.566?mibextid=ZbWKwL" target="_blank">
+                <img src="Pictures/contact_b&w_facebook.png">
+            </a>
+        </div>
+        <div class="contact-container">
+            <a href="mailto:michelle.gunawan@student.uts.edu.au" target="_blank">
+                <img src="Pictures/contact_b&w_outlook.png">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
