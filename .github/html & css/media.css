@@ -1,0 +1,122 @@
+/* _____________________________________________
+
+ABOUT ME 
+picture on top, text 
+________________________________________________*/
+@media screen and (max-width: 768px) {
+
+    /* new Layout: Picture on the top, text on the bottom */
+    body.aboutme-page .main-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    body.aboutme-page .picture-container {
+        width: 50vw;
+        height: 80vh;
+    }
+
+    body.aboutme-page .picture-container img {
+        width: 50vw;
+    }
+
+    body.aboutme-page .text-container {
+        margin-left: 0;
+        width: 50vw;
+    }
+
+    body.aboutme-page .text-container .paragraph-container {
+        width: 45vw;
+    }
+
+    body.aboutme-page .text-container .footer-container .background-box {
+        width: 70%;
+    }
+
+    body.aboutme-page .arrow-left {
+        left: 2%;
+    }
+
+    body.aboutme-page .arrow-right {
+        right: 2%;
+    }
+
+
+    /* _____________________________________________
+
+FAVORITE PLACE
+picture at bottom, text on top
+________________________________________________*/
+
+    /* New layout: Text on the top, Picture on the bottom */
+
+    body.place-page .main-container {
+        flex-direction: column;
+        min-height: fit-content;
+        padding: 1vh 1vw;
+    }
+
+    body.place-page .text-container {
+        flex: 1;
+        padding: 0.5vw;
+        width: 65vw;
+    }
+
+    body.place-page .paragraph-container p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    body.place-page .picture-container {
+        flex: 1;
+        height: auto;
+        padding: 2vw;
+        margin-right: 0;
+        margin-bottom: 5vh;
+        width: 60vw;
+    }
+
+    body.place-page .picture-container img {
+        height: 40vh;
+        width: 55vw;
+    }
+
+    /* _____________________________________________
+
+FAVORITE THINGS 
+picture at bottom, text on top
+________________________________________________*/
+
+    body.things-page {
+        min-height: 100%;
+        /* Ensure it grows with content */
+        height: auto;
+        /* Avoid fixed height */
+        overflow-y: auto;
+        /* Ensure inner scrolling */
+    }
+
+    body.things-page .main-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    body.things-page .picture-container {
+        margin-top: 1vh;
+        width: 60vw;
+        height: 90vh;
+        max-height: fit-content;
+    }
+
+    body.things-page .picture-container .picture {
+        width: 30vw;
+    }
+
+    /* Text Container */
+    body.things-page .text-container {
+        width: 60vw;
+        height: 60vh;
+    }
+}

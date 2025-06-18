@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About me: Education</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="media.css">
+
+    <style>
+        .paragraph-container {
+            flex-direction: column;
+        }
+
+        .paragraph-container .timeline-item {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        /* Year and detail styling */
+        .paragraph-container .timeline-item .year {
+            width: 40%;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .paragraph-container .timeline-item .detail {
+            flex: 2;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body class="aboutme-page">
+    <div class="main-container">
+        <!-- Picture container -->
+        <div class="picture-container">
+            <img src="../Pictures/aboutme_education.jpg" alt="Details">
+        </div>
+
+        <!-- Text container -->
+        <div class="text-container">
+            <!-- Container for h1 (above paragraph) -->
+            <div class="header-container">
+                <h1>ABOUT ME</h1>
+                <hr>
+            </div>
+
+            <div class="paragraph-container">
+                <div class="timeline-item">
+                    <span class="year">2024+</span>
+                    <span class="detail">UTS College</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2015-2024</span>
+                    <span class="detail">BBS Bandung</span>
+                </div>
+            </div>
+
+            <!-- Container for h2 (below paragraph) -->
+            <div class="footer-container">
+
+                <h2>EDUCATION</h2>
+                <div class="background-box"></div>
+
+                <!-- Left arrow image -->
+                <a href="../html & css/2_aboutme_details.html">
+                    <img src="../Pictures/graphics/left_grey.png" alt="Left Arrow" class="arrow arrow-left"
+                        onmouseover="this.src='../Pictures/graphics/left_darkgrey.png'"
+                        onmouseout="this.src='../Pictures/graphics/left_grey.png'">
+                </a>
+
+                <!-- Right arrow image -->
+                <a href="../html & css/2_aboutme_hobbies.html">
+                    <img src="../Pictures/graphics/right_grey.png" alt="Right Arrow" class="arrow arrow-right"
+                        onmouseover="this.src='../Pictures/graphics/right_darkgrey.png'"
+                        onmouseout="this.src='../Pictures/graphics/right_grey.png'">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
